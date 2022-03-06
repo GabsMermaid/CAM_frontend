@@ -3,6 +3,8 @@ import Header from './components/Header'
 import Dashboard from './pages/Dashboard'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import Approval from './pages/Approval'
+import User_Dashboard from './pages/User_Dashboard'
 
 function App() {
   return (

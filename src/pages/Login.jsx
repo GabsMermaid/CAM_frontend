@@ -27,7 +27,7 @@ function Login() {
 				<h1>
 					<FaSignInAlt /> Log In
 				</h1>
-				<p>Please create a new account</p>
+				<p>Welcome Back to CAM!</p>
 			</section>
 
 			<section className='form'>
