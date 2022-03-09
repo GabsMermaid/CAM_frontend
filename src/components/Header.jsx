@@ -1,3 +1,5 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 import {FaSignInAlt, FaSignOutAlt, FaUser} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 
