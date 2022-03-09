@@ -112,7 +112,10 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Future</Link>
+                      <Link to="https://www.youtube.com/watch?v=pt-cPu1oiDU" onClick={closeMenu}>Future</Link>
+                    </li>
+                    <li>
+                      <Link to="https://github.com/GabsMermaid/CAM_frontend" onClick={closeMenu}>Github</Link>
                     </li>
                   </ul>
                   {!hideSignin &&
@@ -120,7 +123,7 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
+                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign in</Link>
                       </li>
                     </ul>}
                 </div>
