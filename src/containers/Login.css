@@ -1,0 +1,61 @@
+@media all and (min-width: 480px) {
+
+
+    .Login {
+      padding: 150px 0;
+    }
+  
+    .Login form {
+      margin: auto;
+      max-width: 320px;
+    } 
+
+    .Header {
+      font-size: xx-large;
+      font-weight: 700px;
+      text-align: center;
+      color: ##5658dd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    input[type=email] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 10px 120px;
+        border: 100px solid #6163ff;
+        border-radius: 5px;
+        background: #6163ff;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        text-align: center;
+        appearance: button;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .btn:hover {
+        transform: scale(0.98);
+      }
+  }
