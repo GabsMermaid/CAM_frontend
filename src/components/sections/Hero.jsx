@@ -2,7 +2,8 @@ import React from 'react';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
-import Button from '../elements/Button';
+// import Button from '../elements/Button';
+import { Link } from 'react-router-dom';
 //import Image from '../elements/Image';import {useState} from 'react'
 
 
@@ -57,9 +58,7 @@ const Hero = ({
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup> 
-                  <Button tag="a" color="primary" wideMobile onClick={() => window.open("./Signup")}>
-                    Sign Up
-                    </Button>
+                  <Link to="/Signup" className="button button-primary button-wide-mobile button-sm">Sign up</Link>
                 </ButtonGroup>
               </div>
             </div>
