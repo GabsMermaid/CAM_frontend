@@ -112,10 +112,10 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link webMobile onClick={() => window.open("https://www.youtube.com/watch?v=pt-cPu1oiDU")}>Future</Link>
+                      <a href="https://www.youtube.com/watch?v=pt-cPu1oiDU" target="_blank" rel="noopener noreferrer">Future</a>
                     </li>
                     <li>
-                      <Link webMobile onClick={() => window.open("https://github.com/GabsMermaid/CAM_frontend")}>Github</Link>
+                      <a href="https://github.com/GabsMermaid/CAM_frontend" target="_blank" rel="noopener noreferrer">Github</a>
                     </li>
                   </ul>
                   {!hideSignin &&
@@ -123,7 +123,7 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="Login" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign in</Link>
+                        <Link to="/Login" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign in</Link>
                       </li>
                     </ul>}
                 </div>
