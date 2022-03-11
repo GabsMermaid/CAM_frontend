@@ -1,5 +1,6 @@
 @media all and (min-width: 480px) {
-  
+
+
     .Login {
       padding: 150px 0;
     }
@@ -11,9 +12,9 @@
 
     .Header {
       font-size: xx-large;
-      font-weight: 500;
+      font-weight: 700px;
       text-align: center;
-      color: rgb(46, 46, 161);
+      color: ##5658dd;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -38,10 +39,11 @@
     }
     
     .btn {
+        width: 100%;
         padding: 10px 120px;
-        border: 10px solid #000;
+        border: 100px solid #6163ff;
         border-radius: 5px;
-        background: #000;
+        background: #6163ff;
         color: #fff;
         font-size: 20px;
         font-weight: 700;

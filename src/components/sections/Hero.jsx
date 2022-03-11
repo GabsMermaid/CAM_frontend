@@ -57,7 +57,7 @@ const Hero = ({
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup> 
-                  <Button tag="a" color="primary" wideMobile onClick={() => window.open("https://github.com/GabsMermaid/CAM_frontend")}>
+                  <Button tag="a" color="primary" wideMobile onClick={() => window.open("./Signup")}>
                     Sign Up
                     </Button>
                 </ButtonGroup>

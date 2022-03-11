@@ -112,10 +112,10 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="https://www.youtube.com/watch?v=pt-cPu1oiDU" onClick={closeMenu}>Future</Link>
+                      <Link webMobile onClick={() => window.open("https://www.youtube.com/watch?v=pt-cPu1oiDU")}>Future</Link>
                     </li>
                     <li>
-                      <Link to="https://github.com/GabsMermaid/CAM_frontend" onClick={closeMenu}>Github</Link>
+                      <Link webMobile onClick={() => window.open("https://github.com/GabsMermaid/CAM_frontend")}>Github</Link>
                     </li>
                   </ul>
                   {!hideSignin &&

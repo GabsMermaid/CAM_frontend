@@ -40,7 +40,7 @@ export default function Login() {
           />
         
         </Form.Group>
-        <Button block size="lg" type="submit" disabled={!validateForm()}>
+        <Button block size="lg" type="submit" class='btn btn-primary' disabled={!validateForm()}>
           Log in
         </Button>
         </Form>

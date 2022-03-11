@@ -54,10 +54,11 @@
       }
     
     .btn {
+        width: 100%;
         padding: 10px 120px;
-        border: 10px solid #000;
+        border: 10px solid #6163ff;
         border-radius: 5px;
-        background: #000;
+        background: #6163ff;
         color: #fff;
         font-size: 15px;
         font-weight: 70;

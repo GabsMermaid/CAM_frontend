@@ -23,7 +23,7 @@ export default function Login() {
         <h1 className="Header"> Sign Up for CAM app </h1>
 
         <Form.Group size="lg" controlId="name">
-          <Form.Label>Name</Form.Label>
+          <Form.Label>Name:</Form.Label>
           <Form.Control
             autoFocus
             type="name"
