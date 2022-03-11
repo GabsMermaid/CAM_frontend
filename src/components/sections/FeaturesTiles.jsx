@@ -115,7 +115,7 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Convinience
+                    Efficient
                     </h4>
                   <p className="m-0 text-sm">
                     Makes follow up and delegating content and approval easier for you and your clients.
