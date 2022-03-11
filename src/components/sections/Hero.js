@@ -1,11 +1,10 @@
 import React from 'react';
-//import {useState} from 'react'
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
-import Image from '../elements/Image';
-//import Modal from '../elements/Modal';
+//import Image from '../elements/Image';import {useState} from 'react'
+
 
 const propTypes = {
   ...SectionProps.types
@@ -25,18 +24,6 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
-
-  /*const [videoModalActive, setVideomodalactive] = useState(false);
-
-  const openModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(true);
-  }
-
-  const closeModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(false);
-  }*/
 
   const outerClasses = classNames(
     'hero section center-content',
@@ -76,16 +63,7 @@ const Hero = ({
                 </ButtonGroup>
               </div>
             </div>
-          </div>
-          {/*  
-          <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-              <Image
-                className="has-shadow"
-                src={require('./../../assets/images/placeholder.jpg')}
-                alt="Hero"
-                width={896}
-                height={504} />
-          </div>*/}
+          </div>   
         </div>
       </div>
     </section>

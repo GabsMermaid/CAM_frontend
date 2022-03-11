@@ -1,0 +1,75 @@
+@media all and (min-width: 480px) {
+
+    .Signup {
+      padding: 150px 0;
+    }
+  
+    .Signup form {
+      margin: auto;
+      max-width: 320px;
+    }
+  }
+
+    .Header {
+      font-size: xx-large;
+      font-weight: 200;
+      text-align: center;
+      color: rgb(46, 46, 161);
+    }
+    
+    input[type=name] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type=email] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    input[type=password2] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      }
+    
+    .btn {
+        padding: 10px 120px;
+        border: 10px solid #000;
+        border-radius: 5px;
+        background: #000;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 70;
+        cursor: pointer;
+        text-align: center;
+        appearance: button;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .btn:hover {
+        transform: scale(0.98);
+      }
+

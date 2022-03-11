@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
+    "create-react-class": "^15.7.0",
     "lodash": "^4.17.15",
     "react": "^16.13.1",
+    "react-bootstrap": "^2.2.0",
+    "react-bootstrap-validation": "^0.1.11",
     "react-dom": "^16.13.1",
     "react-ga": "^2.7.0",
     "react-router-dom": "^5.1.2",
