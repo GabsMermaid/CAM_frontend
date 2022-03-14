@@ -1,9 +1,5 @@
 @media all and (min-width: 480px) {
 
-    .Dashboard {
-      padding: 150px 0;
-    }
-
     .Header {
         font-size: xx-large;
         font-weight: 500;
@@ -12,5 +8,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+
+      .Dashboard {
+        padding: 150px 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .Content{
+        padding: 150px 0;
+        align-items: center;
+        justify-content: center;
+         
       }
 } 
