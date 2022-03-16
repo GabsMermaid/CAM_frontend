@@ -1,0 +1,11 @@
+@media all and (min-width: 480px) {
+    .Header {
+        font-size: 60px;
+        font-weight: 700px;
+        text-align: center;
+        color: #5658dd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

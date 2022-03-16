@@ -1,5 +1,36 @@
 @media all and (min-width: 480px) {
-
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    img {
+        display: block;
+        cursor: pointer;
+    }
+    .Container {
+        margin: auto;
+        width: 100%;
+        max-width: 540px;
+    }
+    .Container .selected {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        border: #6163ff;
+    }
+    .Container .imgcontainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 40px 0 0 0;
+    }
+    .Container .imgcontainer img {
+        width: 100px;
+        height: 100px;
+        margin: 5px 0;
+    }
     .Header {
         padding: 10%;
         font-size: 60px;
@@ -9,23 +40,20 @@
         display: flex;
         align-items: center;
         justify-content: center;
-      }
-
-      .Dashboard {
+    }
+    .Dashboard {
         padding: auto;
         color: aliceblue;
         display: flex;
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-      }
-
-      .Button {
+    }
+    .Button {
         display: flex;
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-      }
-        
-      
-} 
+    }
+    .Container {}
+}
