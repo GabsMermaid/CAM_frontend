@@ -3,7 +3,6 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import ButtonGroup from '../components/elements/ButtonGroup.jsx';
 import Button from '../components/elements/Button';
-import "./../assets/images/La-Central-008.png";
 import "./Dashboard.css";
 //import classNames from 'classnames';
 
