@@ -1,11 +1,12 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import { positions } from '@mui/material/node_modules/@mui/system';
 import TextField from '@mui/material/TextField';
-import ButtonGroup from '../components/elements/ButtonGroup.jsx';
+import * as React from 'react';
 import Button from '../components/elements/Button';
+import ButtonGroup from '../components/elements/ButtonGroup.jsx';
 import "./Dashboard.css";
-import Images from './Images.jsx';
-//import classNames from 'classnames';
 
 export default function Dashboard() {
   //const [value, setValue] = React.useState('');
@@ -27,19 +28,66 @@ export default function Dashboard() {
     });
   };
 
+  const postData = [
+    {
+      img: "https://i.imgur.com/7HfmgPK.jpg",
+      title: "Posted",
+    },
+    {
+      img: "https://i.imgur.com/KleMh2k.jpg",
+      title: "Posted",
+    },
+    {
+      img: "https://i.imgur.com/YMxK0bm.jpg",
+      title: "Posted",
+    },
+    {
+      img: "https://i.imgur.com/3x2LjF1.jpg",
+      title: "Posted",
+    },
+    {
+      img: "https://i.imgur.com/pxQU67d.jpg",
+      title: "Posted",
+    },
+    {
+      img: "https://i.imgur.com/0E9YbS5.jpg",
+      title: "Posted",
+    },
+    {
+      img: "https://i.imgur.com/q7gsJtk.jpg",
+      title: "Posted",
+    },
+    {
+      img: "https://i.imgur.com/Z9YUNPb.jpg",
+      title: "Posted",
+    },
+    {
+      img: "https://i.imgur.com/yGXDyZ0.jpg",
+      title: "Posted",
+    }, 
+    
+  ]
+
   return (
     <>
     <div className="Header">Account Dashboard</div>
 
-    <div className="Container">
-      {/*  <img src="" alt="selected" className="selected" /> */}
-      <div className="imgContainer">
-        {Images.map((img, index) => (
-          <img src={img} alt="Post" />
-        ))}
-      </div>
-
+    <div className='Grid'>
+    <ImageList sx={{ width: 600, height: 550 }} variant="quilted" cols={3} rowHeight={164}>
+      {postData.map((post) => (
+        <ImageListItem key={post.img}>
+          <img
+            src={`${post.img}?w=164&h=164&fit=crop&auto=format`}
+            srcSet={`${post.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+            alt={positions.title}
+            loading="lazy"
+          />
+        </ImageListItem>
+      ))}
+    </ImageList> 
     </div>
+
+    <br />
     
     <Box
       className="Dashboard"
