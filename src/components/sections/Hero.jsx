@@ -58,7 +58,7 @@ const Hero = ({
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup> 
                   <Button tag="a" color="primary" wideMobile onClick={() => window.open("./Signup")}>
-                    Sign Up Previous
+                    Sign Up
                     </Button>
                 </ButtonGroup>
               </div>

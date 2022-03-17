@@ -111,9 +111,9 @@ const Header = ({
                       'list-reset text-xs',
                       navPosition && `header-nav-${navPosition}`
                     )}>
-                    <li>
+                    {/* <li>
                       <a href="https://www.youtube.com/watch?v=pt-cPu1oiDU" target="_blank" rel="noopener noreferrer">Future</a>
-                    </li>
+                    </li> */}
                     <li>
                       <a href="https://github.com/GabsMermaid/CAM_frontend" target="_blank" rel="noopener noreferrer">Github</a>
                     </li>
