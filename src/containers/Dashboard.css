@@ -14,23 +14,22 @@
         align-items: center;
         justify-content: center;
     }
-    .Grid {
+    div.Grid {
         display: flex;
-        flex-wrap: wrap;
-        align-content: center;
         justify-content: center;
     }
-    .Dashboard {
-        /* padding: auto; */
-        /* color: aliceblue; */
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-    }
+    div.Dashboard {
+        width: 800px;
+        height: 100%;
+        margin: auto 0px;
+        text-align: center;
+        
+        /* box-sizing: border-box;
+        border: 1px solid red; */
+    } 
     .Button {
+        height: 110px;
         display: flex;
-        flex-wrap: wrap;
         align-content: center;
         justify-content: center;
     }

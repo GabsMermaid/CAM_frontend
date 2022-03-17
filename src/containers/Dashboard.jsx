@@ -73,137 +73,132 @@ export default function Dashboard() {
     <div className="Header">Account Dashboard</div>
 
     <div className='Grid'>
-    <ImageList sx={{ width: 600, height: 550 }} variant="quilted" cols={3} rowHeight={164}>
-      {postData.map((post) => (
-        <ImageListItem key={post.img}>
-          <img
-            src={`${post.img}?w=164&h=164&fit=crop&auto=format`}
-            srcSet={`${post.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-            alt={positions.title}
-            loading="lazy"
-          />
-        </ImageListItem>
-      ))}
-    </ImageList> 
+      <ImageList sx={{ width: 600, height: 550 }} variant="quilted" cols={3} rowHeight={164}>
+        {postData.map((post) => (
+          <ImageListItem key={post.img}>
+            <img
+              src={`${post.img}?w=164&h=164&fit=crop&auto=format`}
+              srcSet={`${post.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+              alt={positions.title}
+              loading="lazy"
+            />
+          </ImageListItem>
+        ))}
+      </ImageList>
+
+      <div className='Dashboard'>
+        <Box
+          component="form"
+          sx={{
+            '& .MuiTextField-root': { m: 1, width: '25ch' },
+          }}
+          noValidate
+          autoComplete="off"
+          onSubmit={handleSubmit}
+          >
+          <div className='Text'>
+          <div>
+            <TextField
+              id="outlined-multiline-flexible"
+              name='account_name'
+              label="Account Name"
+              color="secondary"
+              // value={value}
+              // onChange={handleChange}
+              variant="filled"
+              sx={{backgroundColor:"gray", color:"white"}}
+              InputLabelProps={{style:{color:'white'}}}
+              InputProps={{style: {color:"white"}}}
+            />
+            <TextField
+              id="outlined-multiline-flexible"
+              name='account_type'
+              label="Account type"
+              color="secondary"
+              // value={value}
+              // onChange={handleChange}
+              variant="filled"
+              sx={{backgroundColor:"gray", color:"white"}}
+              InputLabelProps={{style:{color:'white'}}}
+              InputProps={{style: {color:"white"}}}
+            />
+          </div>
+          <br />
+          <div>
+            <TextField
+              id="outlined-multiline-static"
+              name='account_poc'
+              label="Account POC"
+              color="secondary"
+              multiline
+              // value={value}
+              // onChange={handleChange}
+              variant="filled"
+              sx={{backgroundColor:"gray", color:"white"}}
+              InputLabelProps={{style:{color:'white'}}}
+              InputProps={{style: {color:"white"}}}
+            />
+            <TextField
+              id="outlined-multiline-static"
+              name='email'
+              label="Email"
+              color="secondary"
+              multiline
+              // value={value}
+              // onChange={handleChange}
+              variant="filled"
+              sx={{backgroundColor:"gray", color:"white"}}
+              InputLabelProps={{style:{color:'white'}}}
+              InputProps={{style: {color:"white"}}}
+            />
+          </div>
+          <br />
+          <div>
+            <TextField
+              id="outlined-multiline-static"
+              name='account_notes'
+              label="Account Notes"
+              color="secondary"
+              multiline
+              rows={4}
+              variant='filled'
+              sx={{backgroundColor:"gray", color:"white"}}
+              InputLabelProps={{style:{color:'white'}}}
+              InputProps={{style: {color:"white"}}}
+              
+            />
+            <TextField
+              id="outlined-multiline-static"
+              name='deck_notes'
+              label="Deck Notes"
+              color="secondary"
+              multiline
+              rows={4}
+              variant='filled'
+              sx={{backgroundColor:"gray", color:"white"}}
+              InputLabelProps={{style:{color:'white'}}}
+              InputProps={{style: {color:"white"}}}
+            />
+          </div>
+          </div>
+        </Box>
+        <ButtonGroup className="Button">
+
+          <Button tag="a" color="primary" wideMobile onChange={() => window.open("")}>
+              Upload
+          </Button>
+
+          <Button tag="a" color="primary" wideMobile onClick={() => window.open("")}>
+              Save
+          </Button>
+
+          <Button tag="a" color="primary" wideMobile onClick={() => window.open("./Send")}>
+              Send
+          </Button>
+
+      </ButtonGroup>
+      </div>
     </div>
-
-    <br />
-    
-    <Box
-      className="Dashboard"
-      component="form"
-      sx={{
-        '& .MuiTextField-root': { m: 1, width: '25ch' },
-      }}
-      noValidate
-      autoComplete="off"
-      onSubmit={handleSubmit}
-      >
-      <div className='Text'>
-      <div>
-        <TextField
-          id="outlined-multiline-flexible"
-          name='account_name'
-          label="Account Name"
-          color="secondary"
-          // value={value}
-          // onChange={handleChange}
-          variant="filled"
-          sx={{backgroundColor:"gray", color:"white"}}
-          InputLabelProps={{style:{color:'white'}}}
-          InputProps={{style: {color:"white"}}}
-        />
-        <TextField
-          id="outlined-multiline-flexible"
-          name='account_type'
-          label="Account type"
-          color="secondary"
-          // value={value}
-          // onChange={handleChange}
-          variant="filled"
-          sx={{backgroundColor:"gray", color:"white"}}
-          InputLabelProps={{style:{color:'white'}}}
-          InputProps={{style: {color:"white"}}}
-        />
-      </div>
-      <br />
-      <div>
-        <TextField
-          id="outlined-multiline-static"
-          name='account_poc'
-          label="Account POC"
-          color="secondary"
-          multiline
-          // value={value}
-          // onChange={handleChange}
-          variant="filled"
-          sx={{backgroundColor:"gray", color:"white"}}
-          InputLabelProps={{style:{color:'white'}}}
-          InputProps={{style: {color:"white"}}}
-        />
-        <TextField
-          id="outlined-multiline-static"
-          name='email'
-          label="Email"
-          color="secondary"
-          multiline
-          // value={value}
-          // onChange={handleChange}
-          variant="filled"
-          sx={{backgroundColor:"gray", color:"white"}}
-          InputLabelProps={{style:{color:'white'}}}
-          InputProps={{style: {color:"white"}}}
-        />
-      </div>
-      <br />
-      <div>
-        <TextField
-          id="outlined-multiline-static"
-          name='account_notes'
-          label="Account Notes"
-          color="secondary"
-          multiline
-          rows={4}
-          variant='filled'
-          sx={{backgroundColor:"gray", color:"white"}}
-          InputLabelProps={{style:{color:'white'}}}
-          InputProps={{style: {color:"white"}}}
-          
-        />
-        <TextField
-          id="outlined-multiline-static"
-          name='deck_notes'
-          label="Deck Notes"
-          color="secondary"
-          multiline
-          rows={4}
-          variant='filled'
-          sx={{backgroundColor:"gray", color:"white"}}
-          InputLabelProps={{style:{color:'white'}}}
-          InputProps={{style: {color:"white"}}}
-        />
-      </div>
-      </div>
-    </Box>
-
-    <br />
-
-    <ButtonGroup className="Button">
-
-      <Button tag="a" color="primary" wideMobile onChange={() => window.open("")}>
-          Upload
-      </Button>
-
-      <Button tag="a" color="primary" wideMobile onClick={() => window.open("")}>
-          Save
-      </Button>
-
-      <Button tag="a" color="primary" wideMobile onClick={() => window.open("./Send")}>
-          Send
-      </Button>
-
-    </ButtonGroup>
-
   </>
   );
 }
