@@ -13,6 +13,7 @@ import Login from './containers/Login';
 import Signup from './containers/Signup';
 import Dashboard from "./containers/Dashboard"
 import Send from "./containers/Send"
+import ApprovalDashboard from "./containers/ApprovalDashboard"
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -59,6 +60,10 @@ const App = () => {
                 /> <
                 AppRoute exact path = "/Send"
                 component = { Send }
+                layout = { LayoutDefault }
+                /> <
+                AppRoute exact path = "/ApprovalDashboard"
+                component = { ApprovalDashboard }
                 layout = { LayoutDefault }
                 /> < /
                 Switch >
