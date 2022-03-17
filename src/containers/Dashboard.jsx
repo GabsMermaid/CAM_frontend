@@ -4,14 +4,15 @@ import TextField from '@mui/material/TextField';
 import ButtonGroup from '../components/elements/ButtonGroup.jsx';
 import Button from '../components/elements/Button';
 import "./Dashboard.css";
+import Images from './Images.jsx';
 //import classNames from 'classnames';
 
 export default function Dashboard() {
-  const [value, setValue] = React.useState('');
+  //const [value, setValue] = React.useState('');
 
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
+  // const handleChange = (event) => {
+  //   setValue(event.target.value);
+  // };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -30,13 +31,15 @@ export default function Dashboard() {
     <>
     <div className="Header">Account Dashboard</div>
 
-    {/* <div className="Container">
-      <img src="" alt="selected" className="selected" />
+    <div className="Container">
+      {/*  <img src="" alt="selected" className="selected" /> */}
       <div className="imgContainer">
-        <img src="./images/La-Central-008.png" alt="post" />
+        {Images.map((img, index) => (
+          <img src={img} alt="Post" />
+        ))}
       </div>
 
-    </div> */}
+    </div>
     
     <Box
       className="Dashboard"
