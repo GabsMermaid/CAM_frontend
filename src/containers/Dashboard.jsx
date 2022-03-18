@@ -14,6 +14,7 @@ export default function Dashboard() {
   // const handleChange = (event) => {
   //   setValue(event.target.value);
   // };
+  const [file, setFile] = React.useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -67,6 +68,10 @@ export default function Dashboard() {
     }, 
     
   ]
+
+  function handleUpload(event) {
+    setFile(event.target.files[0]);
+  }
 
   return (
     <>
@@ -184,8 +189,10 @@ export default function Dashboard() {
         </Box>
         <ButtonGroup className="Button">
 
-          <Button tag="a" color="primary" wideMobile onChange={() => window.open("")}>
-              Upload
+        {/* <input type="file" /> */}
+          <Button tag="a" color="primary" onChange={handleUpload}>
+          <input type="file" />
+          Upload
           </Button>
 
           <Button tag="a" color="primary" wideMobile onClick={() => window.open("")}>
